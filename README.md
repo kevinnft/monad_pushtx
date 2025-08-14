@@ -1,6 +1,11 @@
 # Monad Push TX
 
-Script Node.js untuk kirim MON otomatis dari multi-wallet ke banyak alamat.
+## ✨ Fitur
+- Multi-wallet (baca private key dari `wallets.txt`)
+- Kirim ke banyak target address (`address.txt`)
+- Parallel TX per wallet (default: 3 tx per batch)
+- Otomatis berhenti jika saldo wallet < 1 MON
+- Menggunakan RPC **Monad Testnet** (`https://rpc.ankr.com/monad_testnet`)
 
 ## Setup
 ```bash
@@ -9,7 +14,7 @@ cd monad_pushtx
 npm init -y && npm install ethers dotenv chalk
 
 ```
-Buat `wallets.txt` (private key per baris) & `address.txt` (alamat tujuan per baris).
+Buat `wallets.txt` (private key per baris) 
 
 ## Jalankan
 ```bash
