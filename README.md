@@ -6,7 +6,8 @@ Script Node.js untuk kirim MON otomatis dari multi-wallet ke banyak alamat.
 ```bash
 git clone https://github.com/kevinnft/monad_pushtx
 cd monad_pushtx
-npm install
+npm init -y && npm install ethers dotenv chalk
+
 ```
 Buat `wallets.txt` (private key per baris) & `address.txt` (alamat tujuan per baris).
 
